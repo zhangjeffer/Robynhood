@@ -1,6 +1,7 @@
 from flask import Flask, request, redirect
 from twilio.twiml.messaging_response import MessagingResponse
 from stocks import *
+from app import *
 
 app = Flask(__name__)
 
@@ -8,16 +9,9 @@ app = Flask(__name__)
 def sms_reply():
     resp = MessagingResponse()
     req = request.values
-    msg = ""
-
     from_number = req.get('From') 
     body = req.get('Body') #message 
-    stock_info = price(body)
-
-    if not stock_info:
-        msg = "Invalid request"
-    else:
-        msg = "${}: Ask: ${}, Bid: ${}".format(body, stock_info[0], stock_info[1])
+    msg = msg_handler(from_number, body)
     resp.message(msg)
     return str(resp)
 
