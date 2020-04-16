@@ -22,6 +22,8 @@ def retrieve(phone_num):
          'user_id': phone_num
       }
    )
+   if not response.get("Item"):
+      return None
    return response["Item"].get("watchlist")
 
 def remove(phone_num, ticker):
