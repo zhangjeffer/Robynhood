@@ -23,3 +23,15 @@ def retrieve(phone_num):
       }
    )
    return response["Item"].get("watchlist")
+
+def remove(phone_num, ticker):
+   response = table.update_item(
+      Key={
+         'user_id': phone_num
+      },
+      UpdateExpression="DELETE watchlist :c",
+      ExpressionAttributeValues={
+         ":c": set({ticker})
+      },
+      ReturnValues="UPDATED_NEW"
+   )
