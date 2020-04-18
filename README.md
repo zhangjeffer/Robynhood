@@ -2,6 +2,8 @@
 
 Robynhood is an offline interactive SMS application that allows users to view stock prices, add, remove and show stocks from a watchlist.
 
+![](images/robynhood.png)
+
 ## Getting Started
 
 Clone the repository into your workspace.
@@ -30,7 +32,7 @@ pip intall yfinance
 $ export ACCOUNT_SID='ACCOUNT SID'
 $ export AUTH_TOKEN='AUTH TOKEN'
 ```
-3. Download, setup and start ngrok on port 5000.
+3. Download, setup and start ngrok on port 5000. Make sure to add /sms to the end of the route.
 ```
 $ ./ngrok http 5000
 ```
@@ -44,15 +46,6 @@ $ python receieve.py
 ```
 $ python send.py +1XXXXXXXXXX
 ```
-### Usage
-
-View any stock ticker by replying with the ticker symbol.
-
-Add stocks to your watchlist by replying with Add followed by a ticker symbol.
-
-Remove stocks from your watchlist by replying with Remove followed by a ticker symbol.
-
-View your watchlist by replying with Show.
 
 ## Built With
 
