@@ -65,6 +65,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## WIP
 
-Clean up directory structure.
-Deploy on AWS Lambda. 
-Swap out yfinance with IEX API.
+Clean up directory structure  
+Deploy on AWS Lambda
+Swap out yfinance for IEX API
