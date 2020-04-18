@@ -39,7 +39,7 @@ $ ./ngrok http 5000
 4. Set Twilio's incoming message webhook to ngrok's http tunnel.
 5. Start the application. 
 ```
-$ python receieve.py
+$ python receive.py
 ```
 6. Register a caller ID to test.
 7. Send an inital message to the caller ID registered.
