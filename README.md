@@ -1,6 +1,6 @@
 # Robynhood
 
-Robynhood is an offline interactive SMS application that allow users to view stock prices, add, remove and show stocks from a watchlist.
+Robynhood is an interactive SMS application that allow users to view stock prices, add, remove and show stocks to/from a watchlist. It is intended to be utilized offline when you want to check stock information, but wifi/data connectivity is limited.
 
 ![](images/robynhood.png)
 
@@ -21,7 +21,7 @@ Make sure you are running Python 3.x and install the packages listed below.
 pip install boto3
 pip install flask
 pip install twilio
-pip intall yfinance
+pip install yfinance
 ```
 
 ### Installing
