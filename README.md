@@ -1,6 +1,6 @@
 # Robynhood
 
-Robynhood is an offline interactive SMS application that allows users to view stock prices, add, remove and show stocks from a watchlist.
+Robynhood is an offline interactive SMS application that allow users to view stock prices, add, remove and show stocks from a watchlist.
 
 ![](images/robynhood.png)
 
