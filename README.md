@@ -64,7 +64,6 @@ $ python send.py +1XXXXXXXXXX
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## WIP
-
-Clean up directory structure<br/>  
-Deploy on AWS Lambda<br/>
-Swap out yfinance for IEX API
+1. Clean up directory structure. 
+2. Deploy on AWS Lambda. 
+3. Swap out yfinance for IEX API.
